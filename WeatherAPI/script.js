@@ -41,6 +41,13 @@ function showDataToUI(data){
 function calculate(k){
     return k-273
 }
-    
+
+function callDataAPI(e){
+    e.preventDefault();
+    city=search.value;
+    showWeather();
+}
+
+form.addEventListener('submit',callDataAPI)
 
 setData();
